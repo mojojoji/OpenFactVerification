@@ -1,0 +1,19 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install deps",
+      "command": "pip install -r requirements.txt"
+    },
+    {
+      "name": "Copy config file",
+      "command": "cp factcheck/config/secret_dict.template factcheck/config/secret_dict.py"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "Start server",
+      "command": "python webapp.py",
+      "runAtStart": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "fact checker",
+  "build": {
+    "context": ".",
+    "dockerfile": "Dockerfile"
+  }
+}
